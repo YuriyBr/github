@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<style>
+	* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.card {
+			width: 1170px;
+			height: 730px;
+			border: 1px solid rgba(0, 0, 0, 1);
+			margin: 0 auto;
+		}
+		.card__list {
+			list-style: none;
+			padding: 15px;
+			margin: 0;
+		}
+
+		.card__item {
+			width: 32%;
+			border: 1px solid rgba(0, 0, 0, 1);
+			display: inline;
+			float: left;
+			margin: 5px;
+			padding: 0;
+
+
+		}
+		.card__item:after {
+			content: '';
+			display: block;
+			width: 0;
+			height: 3px;
+			background: lightblue;
+			transition: width .5s ease-in-out;
+		}
+
+		.card__item:hover:after {
+			width: 100%;
+
+
+		}
+
+       		.card__link {
+			text-decoration: none;
+			font-family: sans-serif, Tahoma;
+			font-size: 20px;
+			display: block;
+		}
+
+		.card__img {
+			max-width: 100%;
+			display: block;
+			opacity: 1;
+		}
+		.card__img:hover{
+			opacity: .5;
+		}
+
+		.card__desc {
+			padding: 10px 0;
+			text-align: center;
+		}
+
+</style>	
+	<div class="wrapper">
+		
+		<div class="card">
+			<ul class="card__list">
+				<li class="card__item">
+					<a href="#" class="card__link">
+						<figure class="card__img-wrap">
+							<img src="service-img.jpg" class="card__img">
+
+							<figcaption class="card__desc">
+								Купить товар
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+			
+				<li class="card__item">
+					<a href="#" class="card__link">
+						<figure class="card__img-wrap">
+							<img src="service-img.jpg" class="card__img">
+
+							<figcaption class="card__desc">
+								Купить товар
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li class="card__item">
+					<a href="#" class="card__link">
+						<figure class="card__img-wrap">
+							<img src="service-img.jpg" class="card__img">
+
+							<figcaption class="card__desc">
+								Купить товар
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+			</ul>
+			<ul class="card__list">
+				<li class="card__item">
+					<a href="#" class="card__link">
+						<figure class="card__img-wrap">
+							<img src="service-img.jpg" class="card__img">
+
+							<figcaption class="card__desc">
+								Купить товар
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+			
+				<li class="card__item">
+					<a href="#" class="card__link">
+						<figure class="card__img-wrap">
+							<img src="service-img.jpg" class="card__img">
+
+							<figcaption class="card__desc">
+								Купить товар
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li class="card__item">
+					<a href="#" class="card__link">
+						<figure class="card__img-wrap">
+							<img src="service-img.jpg" class="card__img">
+
+							<figcaption class="card__desc">
+								Купить товар
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.card {
+			width: 1170px;
+			border: 1px solid rgba(0, 0, 0, 1);
+			margin: 0 auto;
+		}
+		.card__list {
+			list-style: none;
+			padding: 15px;
+		}
+
+		.card__item {
+			width: 30%;
+			border: 1px solid rgba(0, 0, 0, 1);
+		}
+		.card__item:after {
+			content: '';
+			display: block;
+			width: 0;
+			height: 3px;
+			background: lightblue;
+			transition: width .5s ease-in-out;
+		}
+
+		.card__item:hover:after {
+			width: 100%;
+		}
+
+		.card__link {
+			text-decoration: none;
+			font-family: sans-serif, Tahoma;
+			font-size: 20px;
+			display: block;
+		}
+
+		.card__img {
+			max-width: 100%;
+			display: block;
+		}
+
+		.card__desc {
+			padding: 10px 0;
+			text-align: center;
+		}
